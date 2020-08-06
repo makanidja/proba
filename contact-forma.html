@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
     <title>Document</title>
 </head>
-<body>
-    <h1>Da li moze da ze pozove bootstrap</h1>
+<body> 
+    <div class="alert alert-success" style="text-align: center;"><h1>Bootstrap Contact-Form</h1></div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">RASNews</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="contact-forma.html">Contact</a></li>
+            <li><a href="gallery.html">Gellery</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="alert alert-success" style="text-align: center;"><h2>Contact Form</h2></div>
+
+      <div class="container-contact100">
+        <!-- <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div> -->
+    
+        <div class="wrap-contact100">
+          <div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
+            <span class="contact100-form-title-1">
+              Contact Us
+            </span>
+    
+            <span class="contact100-form-title-2">
+              Feel free to drop us a line below!
+            </span>
+          </div>
+    
+          <form class="contact100-form validate-form">
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+              <span class="label-input100">Full Name:</span>
+              <input class="input100" type="text" name="name" placeholder="Enter full name">
+              <span class="focus-input100"></span>
+            </div>
+    
+            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+              <span class="label-input100">Email:</span>
+              <input class="input100" type="text" name="email" placeholder="Enter email addess">
+              <span class="focus-input100"></span>
+            </div>
+    
+            <div class="wrap-input100 validate-input" data-validate="Phone is required">
+              <span class="label-input100">Phone:</span>
+              <input class="input100" type="text" name="phone" placeholder="Enter phone number">
+              <span class="focus-input100"></span>
+            </div>
+    
+            <div class="wrap-input100 validate-input" data-validate = "Message is required">
+              <span class="label-input100">Message:</span>
+              <textarea class="input100" name="message" placeholder="Your Comment..."></textarea>
+              <span class="focus-input100"></span>
+            </div>
+    
+            <div class="container-contact100-form-btn">
+              <button class="contact100-form-btn">
+                <span>
+                  Submit
+                  <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
 </body>
 </html>
